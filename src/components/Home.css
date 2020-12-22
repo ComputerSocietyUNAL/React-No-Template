@@ -1,0 +1,7 @@
+.link-text{
+    color: #01B6B8;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 0.8rem;
+    padding-bottom: 80% ;
+}
