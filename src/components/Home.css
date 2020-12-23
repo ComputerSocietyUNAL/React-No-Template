@@ -5,3 +5,11 @@
     font-size: 0.8rem;
     padding-bottom: 80% ;
 }
+.UpperText{
+    color: #606060;
+    font-size: 100px;
+}
+.LowerText{
+    color: #D84962;
+    font-size: 100px;
+}

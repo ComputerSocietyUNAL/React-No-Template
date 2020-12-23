@@ -9,6 +9,7 @@ import Diarrea from './Diarrea/index';
 import Dimenol from './Dimenol/index';
 import ContactUS from './ContactUs/index';
 import Home from './Home';
+import Footer from './Footer';
 
 
 
@@ -27,6 +28,7 @@ export default class Main extends Component{
                         <Route path="/home" component={Home}></Route>
                         <Redirect to="/home" component={Home}></Redirect>
                     </Switch>
+                <Footer />
             </div>
         );
     }
