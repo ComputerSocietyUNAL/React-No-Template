@@ -6,21 +6,38 @@ import './Footer.css';
 export default class Footer extends Component{
     render(){
         return(
-            <div>
-                <div className="row" style={{
+            <div style={{
                     backgroundColor:"#121212",
-                    color:"white",width:"100%",
+                    color:"white",}}>
+                <p style={{fontSize:"40pt"}}>
+                            Contacto
+                </p>
+                <div className="row" style={{
+                    width:"100%",
                     marginLeft:"0%"}}>
                     <div className="col-md-6">
-                        <p>
-                            Contacto
-                        </p>
+                        <div className="row">
+                            <div className="col-md-3">
+                                <img src="/assets/img/Hotspot.png" alt="" height="60%" style={{marginLeft:"135px",marginTop:"30px"}}/>
+                            </div>
+                            <div className="col-md-3">
+                                <p style={{textAlign:"center",marginTop:"50px",marginLeft:"30px",fontSize:"1.1rem"}}>Bogota D.C</p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-3">
+                                <img src="/assets/img/Celphone.png" alt="" height="60%" style={{marginLeft:"125px",marginTop:"30px"}}/>
+                            </div>
+                            <div className="col-md-3">
+                                <p style={{textAlign:"center",marginTop:"50px",marginLeft:"30px",fontSize:"1.0rem"}}>000-000-0000</p>
+                            </div>
+                        </div>                        
                     </div>
                     <div className="col-md-6" >
-                        <Form>
+                        <Form style={{fontSize:"29px"}}>
                             <Row form>
                                 <Col md={6}>
-                                    <FormGroup>
+                                    <FormGroup >
                                         <Label for="exampleName">Nombre</Label>
                                         <Input type="name" name="name" id="name" placeholder="Nombre" />
                                     </FormGroup>
