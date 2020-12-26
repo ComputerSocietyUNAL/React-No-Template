@@ -1,16 +1,21 @@
 import React , { Component } from 'react';
 
+import './ApiMap.css';
+
 export default class ApiMap extends Component{
     render(){
         return(
-            <div style={{backgroundColor:"#121212",color:"white"}}>
-                <div className="row">
+            <div >
+                <div className="row" style={{backgroundColor:"#121212",color:"white"}}>
                     <div className="col-md-6">
-                        <p>Puntos de venta</p>
+                        <p className="SalesText">Puntos de venta</p>
                     </div>
                     <div className="col-md-6">
                         <p>aqui pondria mi ApiMap... si tan solo tuviera una :'v</p>
                     </div>
+                </div>
+                <div className="space">
+
                 </div>
             </div>
         );
