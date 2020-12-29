@@ -1,8 +1,9 @@
 export const data = [
     {
+        Image:"/assets/img/Solhidrex_01.png",
         PrimaryColor: "#606060",
         SecondaryColor: "#D84962",
-        Fsize: "5rem",
+        Fsize: "4rem",
         PrimaryText: "Una divertida forma de",
         SecondaryText: "rehidratarse",
         //RegConfig= [color,Primary-fontSize,Secondary-fontSize]
@@ -11,9 +12,10 @@ export const data = [
         SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
     },
     {
+        Image:"/assets/img/Laxium_01.png",
         PrimaryColor: "#606060",
         SecondaryColor: "#86BE3E",
-        Fsize: "",
+        Fsize: "3rem",
         PrimaryText: "Para un despertar libre,",
         SecondaryText: "tranquilo y sin estreñimiento",
         RegConfig: ["#606060","0,9rem","0,8rem"],
@@ -21,9 +23,10 @@ export const data = [
         SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
     },
     {
+        Image:"/assets/img/Dimenol_01.png",
         PrimaryColor: "#606060",
         SecondaryColor: "#606060",
-        Fsize: "",
+        Fsize: "4rem",
         PrimaryText: "Para no perderse lo mejor del viaje",
         SecondaryText: "",
         RegConfig: ["#606060","0,9rem","0,8rem"],
@@ -31,9 +34,10 @@ export const data = [
         SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
     },
     {
+        Image:"/assets/img/Labinpina_01.png",
         PrimaryColor: "#86BE3E",
         SecondaryColor: "#606060",
-        Fsize: "",
+        Fsize: "4rem",
         PrimaryText: "Alivio y tranquilidad",
         SecondaryText: "para la pancita",
         RegConfig: ["#606060","0,9rem","0,8rem"],

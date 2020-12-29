@@ -3,12 +3,15 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 import './Footer.css';
 
+
 export default class Footer extends Component{
     render(){
         return(
-            <div style={{
-                    backgroundColor:"#121212",
-                    color:"white",}}>
+            <div className="blackBox" style={{
+                backgroundImage:"url(/assets/img/FooterPic.png)",
+                backgroundSize:"cover",
+                width:"100%"
+                }}>
                 <p style={{fontSize:"40pt"}}>
                             Contacto
                 </p>
@@ -54,7 +57,8 @@ export default class Footer extends Component{
                                 <Input type="textarea" name="Mensaje" id="Mensaje" rows="4" />
                             </FormGroup>
                             <FormGroup>
-                                <Button type="submit" className="submitbtn">
+                                <Button type="submit" className="submitbtn" style={{
+                                    backgroundColor:"#D84962"}}>
                                         Enviar
                                 </Button>
                             </FormGroup>

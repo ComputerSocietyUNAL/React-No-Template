@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import HomeSlider from './HomeSlider/HomeSlider';
 
 import './Home.css';
-
-import { data } from '../data/data';
-
 
 export default class Home extends Component {
     
     render(){
-        let current=0;
+        
+        
         return(
             <div className="row" style={{width:"100%"}}>
                     <div className="col-md-1" style={{marginTop:"8%"}}>
@@ -28,13 +27,15 @@ export default class Home extends Component {
                                 marginBottom:"5%"
                         }} />
                         <img src="/assets/img/Header_3.png" alt="" width="45%" 
-                            style={{
+                            style={{ 
                                 position:"absolute",
                                 top:"40%",
                                 left:"-10%"
                         }} />
                     </div>
-                    <div className="container">
+                    
+                    <HomeSlider />
+                    {/* <div className="container">
                         <div className="row">
                             <div className="col-md-6">
                                 <p style={{
@@ -62,10 +63,12 @@ export default class Home extends Component {
                                 
                             </div>
                             <div className="col-md-6">
-                                <img src="/assets/img/Solhidrex_01.png" alt="" width="85%"/>
+                                <img src={data[current].Image} alt="" width="85%"/>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                   
+                    
                     
             </div>
         );
