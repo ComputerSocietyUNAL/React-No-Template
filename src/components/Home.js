@@ -35,41 +35,6 @@ export default class Home extends Component {
                     </div>
                     
                     <HomeSlider />
-                    {/* <div className="container">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <p style={{
-                                    color:data[current].PrimaryColor,
-                                    fontSize:data[current].Fsize,}}>
-                                        {data[current].PrimaryText}
-                                    <p style={{
-                                        color:data[current].SecondaryColor,
-                                        fontSize:data[current].Fsize}}>
-                                        {data[current].SecondaryText}
-                                    </p>
-                                </p>
-                                <p style={{
-                                    color:data[current].RegConfig[0],
-                                    fontSize:data[current].RegConfig[1]
-                                }}>
-                                    {data[current].PrimaryReg}
-                                    <p style={{
-                                        color:data[current].RegConfig[0],
-                                        fontSize:data[current].RegConfig[2]
-                                    }}>
-                                        {data[current].SecondaryReg}
-                                    </p>
-                                </p>
-                                
-                            </div>
-                            <div className="col-md-6">
-                                <img src={data[current].Image} alt="" width="85%"/>
-                            </div>
-                        </div>
-                    </div> */}
-                   
-                    
-                    
             </div>
         );
     }

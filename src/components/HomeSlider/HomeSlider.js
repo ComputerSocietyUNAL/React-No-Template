@@ -37,15 +37,15 @@ export default class HomeSlider extends Component{
             <div className="container" >
                 <Carousel 
                     autoPlay={true}
-                    autoPlaySpeed={8000}
+                    autoPlaySpeed={4000}
                     arrows={true}
                     showDots={true}
                     responsive={responsive}
                     ssr={true} // means to render carousel on server-side.
                     infinite={true}
                     draggable={false}
-                    customTransition="all .4"
-                    transitionDuration={500}
+                    customTransition="all 1s "
+                    transitionDuration={900}
                     containerClass="carousel-container"
                     /* removeArrowOnDeviceType={[ "mobile"]} */
                     deviceType={this.props.deviceType}
