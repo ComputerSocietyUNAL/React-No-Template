@@ -7,3 +7,10 @@
     text-align: center;
     padding-top: 5%;
 }
+.title{
+    color: #D84962;
+    font-size: 1.3rem;
+}
+.OldList{
+    list-style: "»";
+}

@@ -2,11 +2,15 @@ import React , { Component } from 'react';
 import Carousel from "react-multi-carousel";
 import { data } from '../../data/solhidrex';
 import Products from './Products';
+import ListTips from './ListTips';
 import Tips from './Tips';
 
 import './Solhidrex.css';
 import "react-multi-carousel/lib/styles.css";
 import MainTips from './MainTips';
+import Symptoms from './Symptoms';
+import Hospital from './Hospital';
+import Olders from './Olders';
 
 
 export default class Solhidrex extends Component {
@@ -110,13 +114,17 @@ export default class Solhidrex extends Component {
                             </div>
                             <div className="col-md-6" style={{marginTop:"-5%", marginLeft:"-10%",paddingRight:"0%"}}>
                                 <img src="/assets/img/Solhidrex_spec.png" alt="Solhidrex" width="100%" />
-                                <Tips/>
+                                <ListTips/>
                             </div>
                         </div>
                     </div>
                     
                 </div>
                 <MainTips/>
+                <Symptoms/>
+                <Hospital/>
+                <Olders/>
+                <Tips/>
             </div>
         );
     }
