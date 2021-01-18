@@ -1,12 +1,15 @@
 import React , { Component } from 'react';
 
-import './Solhidrex.css';
+import './Laxium.css';
+
+import { data } from './dataTips';
 
 
 export default class MainTips extends Component{
     render(){
+        let idx=-1;
         return(
-            <div className="container" style={{marginBottom:"0%"}}>
+            <div className="container" style={{marginBottom:"0%",marginTop:"5%"}}>
                 <div className="row" style={{
                     background:"url(/assets/img/Solhidrex_MainTip.png)",
                     backgroundSize:"cover",
@@ -15,25 +18,32 @@ export default class MainTips extends Component{
                     marginBottom:"18%"
                 }}>
                     <div className="col-md-3 offset-1 cards">
-                        <p className="title" style={{padding:"0% 20%"}}>¿Qué es la deshidratación por diarrea?</p>
-                        <p style={{fontSize:"1.1rem", padding:"0% 10%"}}> 
-                            Es la pérdida de fluidos corporales. En presencia de vómito y diarrea, se pueden perder grandes cantidades de agua y sales llegando a sufrir de deshidratación
-                        </p>
+                        <p className="title" style={{padding:"0% 20%"}}>{data[0].Col1[0].Tip}</p>
+                        <ul style={{textAlign:"left"}}>
+                            {data[0].Col1[0].Msg.map(() => {
+                                idx=idx+1;
+                                return(
+                                    <React.Fragment>
+                                        <li>{data[0].Col1[0].Msg[idx]}</li>
+                                    </React.Fragment>
+                                );
+                            })}
+                        </ul> 
                     </div>
                     <div className="col-md-3 offset-1 cards">
                         <div>
-                            <img src="" alt="Gotas" />
+                            <img src="" alt="Embarazo" />
                         </div>
                         <div>
-                            <p>Vomito diarrea</p>
+                            <p>Embarazo</p>
                         </div>
                     </div>
                     <div className="col-md-3 offset-1 cards">
                         <div>
-                            <img src="" alt="Botella" />
+                            <img src="" alt="Medicamentos" />
                         </div>
                         <div>
-                            <p>Deshidratación perdida de agua</p>
+                            <p>Medicamentos</p>
                         </div>
                     </div>
                 </div>

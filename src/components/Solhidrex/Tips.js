@@ -5,8 +5,8 @@ import './Solhidrex.css';
 export default class Tips extends Component{
    render(){
       return(
-         <div className="container col-md-7">
-            <p className="title" style={{textAlign:"center", fontSize:"2.0rem"}}> Tips para controlar la deshidratación</p>
+         <div className="container col-md-6" style={{textAlign:"center"}}>
+            <p className="title" style={{fontSize:"2.0rem"}}> Tips para controlar la deshidratación</p>
             <div className="row">
                <div className="col-md-4">
                   <img src="" alt="paleta" height="100%" width="100%" />
