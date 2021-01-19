@@ -5,7 +5,7 @@ import './ApiMap.css';
 export default class ApiMap extends Component{
     render(){
         return(
-            <div>
+            <div style={{marginTop:"5%"}}>
                 <div className="row" style={{
                     backgroundColor:"#121212",
                     backgroundImage:"url(/assets/img/FooterPic.png)",
@@ -17,7 +17,7 @@ export default class ApiMap extends Component{
                         <p className="SalesText">Puntos de venta</p>
                     </div>
                     <div className="col-md-6">
-                        <p>aqui pondria mi ApiMap... si tan solo tuviera una :'v</p>
+                        <p>Loading ApiMap...</p>
                     </div>
                 </div>
                 <div className="space">

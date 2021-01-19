@@ -38,9 +38,10 @@ export default class Solhidrex extends Component {
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
                         <div className="col-md-6">
-                            <p style={{
+                            <p className="Tfont" style={{
                                 color:data[id].PrimaryColor,
-                                fontSize:data[id].Fsize,}}>
+                                fontSize:data[id].Fsize,
+                                lineHeight:data[id].LineHeight}}>
                                 {data[id].PrimaryText}
                                 <p style={{
                                     color:data[id].SecondaryColor,
@@ -50,7 +51,8 @@ export default class Solhidrex extends Component {
                             </p>
                             <p style={{
                                 color:data[id].RegConfig[0],
-                                fontSize:data[id].RegConfig[1]
+                                fontSize:data[id].RegConfig[1],
+                                lineHeight:data[id].LineHeight
                                 }}>
                                 {data[id].PrimaryReg}
                                 <p style={{
@@ -91,18 +93,20 @@ export default class Solhidrex extends Component {
                 <div style={{
                     background:"url(/assets/img/ProductBack_01.png)",
                     backgroundSize:"cover",
-                    height:"70vh",
+                    height:"60vh",
                     width:"100%",
-                    color:"white"
+                    color:"white",
+                    marginBottom:"8%"
                     
                 }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6" style={{marginLeft:"10%",marginTop:"-10%"}}>
-                                <img src="/assets/img/Solhidrex.png" alt="Solhidrex" height="60%" />
+                            <div className="col-md-6" style={{marginLeft:"10%",marginTop:"-10%",}}>
+                                <img src="/assets/img/Solhidrex.png" alt="Solhidrex" height="80%" style={{marginBottom:"-10%"}}/>
                                 <p style={{
                                     paddingRight:"25%",
-                                    fontSize:data[0].RegConfig[1]
+                                    fontSize:data[0].RegConfig[1],
+                                    marginTop:"-0%"
                                 }}>
                                     {data[0].PrimaryReg}
                                     <p style={{

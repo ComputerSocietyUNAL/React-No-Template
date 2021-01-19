@@ -42,19 +42,34 @@ export default class Footer extends Component{
                                 <Col md={6}>
                                     <FormGroup >
                                         <Label for="exampleName">Nombre</Label>
-                                        <Input type="name" name="name" id="name" placeholder="Nombre" />
+                                        <Input type="name" name="name" id="name" placeholder="Nombre" 
+                                        style={{
+                                            backgroundColor:"transparent",
+                                            borderTopColor:"transparent",
+                                            borderLeftColor:"transparent",
+                                            borderRightColor:"transparent"}}/>
                                     </FormGroup>
                                 </Col>
                                 <Col md={6}>
                                     <FormGroup>
                                         <Label for="exampleEmail">E-mail</Label>
-                                        <Input type="email" name="email" id="email" placeholder=" e-mail" />
+                                        <Input type="email" name="email" id="email" placeholder=" e-mail"
+                                        style={{
+                                            backgroundColor:"transparent",
+                                            borderTopColor:"transparent",
+                                            borderLeftColor:"transparent",
+                                            borderRightColor:"transparent"}} />
                                     </FormGroup>
                                 </Col>
                             </Row>
                             <FormGroup>
                                 <Label for="exampleText" >Mensaje</Label>
-                                <Input type="textarea" name="Mensaje" id="Mensaje" rows="4" />
+                                <Input type="textarea" name="Mensaje" id="Mensaje" rows="4"
+                                style={{
+                                    backgroundColor:"transparent",
+                                    borderTopColor:"transparent",
+                                    borderLeftColor:"transparent",
+                                    borderRightColor:"transparent"}} />
                             </FormGroup>
                             <FormGroup>
                                 <Button type="submit" className="submitbtn" style={{

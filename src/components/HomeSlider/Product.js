@@ -12,10 +12,11 @@ export default class Product extends Component{
         return(
             <div className="container">
                 <div className="row" style={{padding:"10%"}}>
-                    <div className="col-md-6">
-                        <p style={{
+                    <div className="col-md-6 ">
+                        <p className="Tfont" style={{
                             color:data[id].PrimaryColor,
-                            fontSize:data[id].Fsize,}}>
+                            fontSize:data[id].Fsize,
+                            lineHeight:data[id].LineHeight}}>
                             {data[id].PrimaryText}
                             <p style={{
                                 color:data[id].SecondaryColor,
@@ -25,7 +26,8 @@ export default class Product extends Component{
                         </p>
                         <p style={{
                             color:data[id].RegConfig[0],
-                            fontSize:data[id].RegConfig[1]
+                            fontSize:data[id].RegConfig[1],
+                            lineHeight:data[id].LineHeight,
                             }}>
                             {data[id].PrimaryReg}
                             <p style={{

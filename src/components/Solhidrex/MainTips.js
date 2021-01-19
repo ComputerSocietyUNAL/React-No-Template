@@ -22,7 +22,7 @@ export default class MainTips extends Component{
                     </div>
                     <div className="col-md-3 offset-1 cards">
                         <div>
-                            <img src="" alt="Gotas" />
+                            <img src="/assets/img/Sol_Drops.png" alt="Gotas" width="90%"/>
                         </div>
                         <div>
                             <p>Vomito diarrea</p>
@@ -30,7 +30,7 @@ export default class MainTips extends Component{
                     </div>
                     <div className="col-md-3 offset-1 cards">
                         <div>
-                            <img src="" alt="Botella" />
+                            <img src="/assets/img/Sol_Bottle.png" alt="Botella" />
                         </div>
                         <div>
                             <p>Deshidratación perdida de agua</p>

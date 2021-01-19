@@ -9,7 +9,8 @@ export const data = [
         //RegConfig= [color,Primary-fontSize,Secondary-fontSize]
         RegConfig: ["#606060","0.9rem","0.8rem"],
         PrimaryReg: "Reg. San. Invima 2007M-0007276",
-        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
+        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico.",
+        LineHeight: "1.1",
     },
     {
         Image:"/assets/img/Laxium_01.png",
@@ -20,7 +21,8 @@ export const data = [
         SecondaryText: "tranquilo y sin estreñimiento",
         RegConfig: ["#606060","0,9rem","0,8rem"],
         PrimaryReg: "Reg. San. Invima 2015M-000447-R1",
-        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
+        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico.",
+        LineHeight: "1.1",
     },
     {
         Image:"/assets/img/Dimenol_01.png",
@@ -31,7 +33,8 @@ export const data = [
         SecondaryText: "",
         RegConfig: ["#606060","0,9rem","0,8rem"],
         PrimaryReg: "Reg. Invima 2015M-0004434-R1",
-        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
+        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico.",
+        LineHeight: "1.1",
     },
     {
         Image:"/assets/img/Labinpina_01.png",
@@ -42,6 +45,7 @@ export const data = [
         SecondaryText: "para la pancita",
         RegConfig: ["#606060","0,9rem","0,8rem"],
         PrimaryReg: "Invima 2016M-0005256-R1",
-        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
+        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico.",
+        LineHeight: "1.1",
     },
 ]

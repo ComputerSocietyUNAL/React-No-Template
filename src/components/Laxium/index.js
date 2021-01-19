@@ -33,9 +33,10 @@ export default class Laxium extends Component{
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
                         <div className="col-md-6">
-                            <p style={{
+                            <p className="Tfont" style={{
                                 color:data[id].PrimaryColor,
-                                fontSize:data[id].Fsize,}}>
+                                fontSize:data[id].Fsize,
+                                lineHeight:data[id].LineHeight}}>
                                 {data[id].PrimaryText}
                                 <p style={{
                                     color:data[id].SecondaryColor,
@@ -45,7 +46,8 @@ export default class Laxium extends Component{
                             </p>
                             <p style={{
                                 color:data[id].RegConfig[0],
-                                fontSize:data[id].RegConfig[1]
+                                fontSize:data[id].RegConfig[1],
+                                lineHeight:data[id].LineHeight
                                 }}>
                                 {data[id].PrimaryReg}
                                 <p style={{

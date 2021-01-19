@@ -7,25 +7,27 @@ export default class Symptoms extends Component{
    render(){
       let idx=-1;
       return(
-         <div className="container">
+         <div className="container" style={{marginBottom:"5%"}}>
             <div className="row">
                <div className="col-md-6">
-                  <img src="" alt="Doctor" height="100%" width="100%"/>
+                  <img src="/assets/img/Doctor.png" alt="Doctor" height="100%" width="100%"/>
                </div>
-               <div className="col-md-6" style={{textAlign:"center"}}>
-                  <p className="title">
-                     {data[1].Col2[0].Tip}
-                  </p>
-                  <ul style={{textAlign: "left",display:"inline-block"}}>
-                     {data[1].Col2[0].Msg.map(() => {
-                        idx=idx+1;
-                        return(
-                           <React.Fragment>
-                              <li>{data[1].Col2[0].Msg[idx]}</li>
-                           </React.Fragment>
-                        );
-                     })}
-                  </ul>
+               <div className="col-md-6" style={{textAlign:"left",marginTop:"10%"}}>
+                  <div className="col-md-7">
+                     <p className="Laxtitle" style={{paddingLeft:"0%",fontSize:"1.5rem"}}>
+                        {data[0].Col1[1].Tip}
+                     </p>
+                     <ul style={{textAlign: "left",display:"inline-block",marginLeft:"10%"}}>
+                        {data[0].Col1[1].Msg.map(() => {
+                           idx=idx+1;
+                           return(
+                              <React.Fragment>
+                                 <li style={{listStylePosition:"initial"}}>{data[0].Col1[1].Msg[idx]}</li>
+                              </React.Fragment>
+                           );
+                        })}
+                     </ul>
+                  </div>
                </div>
             </div>
          </div>

@@ -9,3 +9,10 @@
     /* background-image: url("../../public/assets/img/FooterBckImg.png"); */
     color:white;
 }
+
+.Formulario{
+    background-color:"transparent";
+    border-top-color:"transparent";
+    border-left-color:"transparent";
+    border-right-color:"transparent";
+}

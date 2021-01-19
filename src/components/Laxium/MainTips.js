@@ -10,15 +10,16 @@ export default class MainTips extends Component{
         let idx=-1;
         return(
             <div className="container" style={{marginBottom:"0%",marginTop:"5%"}}>
-                <div className="row" style={{
-                    background:"url(/assets/img/Solhidrex_MainTip.png)",
+                <div className="row justify-content-around" style={{
+                    background:"url(/assets/img/Laxium_MainTip.png)",
                     backgroundSize:"cover",
-                    height:"45vh",
+                    height:"30vh",
                     width:"100%",
-                    marginBottom:"18%"
+                    marginBottom:"18%",
+                    
                 }}>
-                    <div className="col-md-3 offset-1 cards">
-                        <p className="title" style={{padding:"0% 20%"}}>{data[0].Col1[0].Tip}</p>
+                    <div className="col-md-3 cards">
+                        <p className="Laxtitle" style={{padding:"0% 20%"}}>{data[0].Col1[0].Tip}</p>
                         <ul style={{textAlign:"left"}}>
                             {data[0].Col1[0].Msg.map(() => {
                                 idx=idx+1;
@@ -30,17 +31,17 @@ export default class MainTips extends Component{
                             })}
                         </ul> 
                     </div>
-                    <div className="col-md-3 offset-1 cards">
+                    <div className="col-md-3 cards">
                         <div>
-                            <img src="" alt="Embarazo" />
+                            <img src="/assets/img/Embarazo.png" alt="Embarazo"  width="50%"/>
                         </div>
                         <div>
                             <p>Embarazo</p>
                         </div>
                     </div>
-                    <div className="col-md-3 offset-1 cards">
+                    <div className="col-md-3 cards">
                         <div>
-                            <img src="" alt="Medicamentos" />
+                            <img src="/assets/img/pills.png" alt="Medicamentos" width="50%" />
                         </div>
                         <div>
                             <p>Medicamentos</p>

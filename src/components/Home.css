@@ -1,3 +1,11 @@
+@font-face {
+    font-size: 1.3rem;
+    font-family: Nexa-Bold;
+    src: url("../fonts/Nexa\ Bold.otf");
+  }
+.Tfont{
+    font-family: Nexa-Bold;
+}
 .link-text{
     color: #01B6B8;
     writing-mode: vertical-lr;

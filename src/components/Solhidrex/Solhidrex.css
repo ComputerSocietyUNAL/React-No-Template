@@ -1,11 +1,15 @@
+
 .cards{
     margin-top: 6.4%;
     background-color: white;
-    border: solid;
-    border-color: grey;
+    /* border: solid;
+    border-color: grey; */
     height: 125%;
     text-align: center;
     padding-top: 5%;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-color:rgba(96, 96, 96, 0.1);
 }
 .title{
     color: #D84962;
@@ -13,4 +17,11 @@
 }
 .OldList{
     list-style: "»";
+    margin-left: -3%;
+    font-size: 1.5rem;
+}
+.OldersPic{
+    position: absolute;
+    left: 65%;
+    top: 29%;
 }

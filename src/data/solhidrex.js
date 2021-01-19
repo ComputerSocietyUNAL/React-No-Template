@@ -9,7 +9,8 @@ export const data = [
         //RegConfig= [color,Primary-fontSize,Secondary-fontSize]
         RegConfig: ["#606060","0.9rem","0.8rem"],
         PrimaryReg: "Reg. San. Invima 2007M-0007276",
-        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico."
+        SecondaryReg: "Es un medicamento. No exceder su consumo. Leer indicaciones y contraindicaciones. Si los sintomas persisten consulte a su médico.",
+        LineHeight: "1.1",
     },
     {
 
