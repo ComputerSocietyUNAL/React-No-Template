@@ -4,7 +4,7 @@ export default class Products extends Component{
     render(){
         return(
             <div>
-                <img src="/assets/img/Dimenol_01.png" alt="" width="100%" />
+                <img src="/assets/img/Labinpina.png" alt="" width="100%" />
             </div>
         );
     }

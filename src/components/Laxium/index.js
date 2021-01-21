@@ -88,15 +88,15 @@ export default class Laxium extends Component{
                 <div style={{
                     background:"url(/assets/img/ProductBack_02.png)",
                     backgroundSize:"cover",
-                    height:"50vh",
+                    height:"60vh",
                     width:"100%",
                     color:"white"
                     
                     }}>
-                    <div className="container">
+                    <div className="container col-md-10">
                         <div className="row">
-                            <div className="col-md-6" style={{marginLeft:"0%",marginTop:"-10%",marginRight:"10%"}}>
-                                <img src="/assets/img/Laxium.png" alt="Laxium" height="60%" />
+                            <div className="col-md-5" style={{marginLeft:"0%",marginTop:"-10%",marginRight:"10%"}}>
+                                <img src="/assets/img/Laxium.png" alt="Laxium" width="95%" style={{marginTop:"40%",marginBottom:"-10%",marginLeft:"-15%"}}/>
                                 <p style={{
                                     paddingRight:"25%",
                                     fontSize:data[0].RegConfig[1]
@@ -109,8 +109,8 @@ export default class Laxium extends Component{
                                     </p>
                                 </p>
                             </div>
-                            <div className="col-md-6" style={{marginTop:"-5%", marginLeft:"-10%",paddingRight:"0%"}}>
-                                <img src="/assets/img/Laxium_spec.png" alt="Laxium" width="100%" />
+                            <div className="col-md-7" style={{marginTop:"-5%", marginLeft:"-10%",paddingRight:"0%"}}>
+                                <img src="/assets/img/Laxium_spec.png" alt="Laxium" width="100%" style={{marginTop:"-8%"}}/>
                                 <ListTips/>
                             </div>
                         </div>

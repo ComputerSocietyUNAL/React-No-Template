@@ -1,27 +1,104 @@
+@media (max-width: 768px) {
 
-.cards{
-    margin-top: 6.4%;
-    background-color: white;
-    /* border: solid;
-    border-color: grey; */
-    height: 125%;
-    text-align: center;
-    padding-top: 5%;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
-    border-color:rgba(96, 96, 96, 0.1);
 }
-.title{
-    color: #D84962;
-    font-size: 1.3rem;
-}
-.OldList{
-    list-style: "»";
-    margin-left: -3%;
-    font-size: 1.5rem;
-}
-.OldersPic{
-    position: absolute;
-    left: 65%;
-    top: 29%;
+@media (min-width: 769px) {
+    .ListTipsBlock{
+        background-size:cover;
+        height:55vh;
+        width:100%;
+        color:white;
+        margin-bottom:8%;
+    }
+    .MainProduct{
+        margin-left:10%;
+        margin-top:-10%;
+    }
+    .ListTips{
+        margin-top:-5%;
+        margin-left:-10%;
+        padding-right:0%;
+    }
+    .LeftList{
+        margin-bottom:7%;
+    }
+    .RightList{
+        margin-top:-0.5%;
+    }
+    .MainTipBlock{
+        margin-bottom:0%;
+    }
+    .MainTip{
+        height:45vh;
+        padding-top:1%;
+        width:100%;
+        margin-bottom:18%;
+        align-items:center;
+    }
+    .SolCards{
+        margin-top: 4.8%;
+        background-color: white;
+        height: 120%;
+        text-align: center;
+        padding-top: 5%;
+        box-shadow: 15px 20px 1px 1px rgba(96,96,96,0.1);
+    }
+    .title{
+        color: #D84962;
+        font-size: 1.3rem;
+    }
+    .SympBlock{
+        margin-bottom:5%
+    }
+    .SympTextBlock{
+        text-align:center;
+        padding:10% 9%;
+    }
+    .SymTitle{
+        color: #D84962;
+        padding:0% 0%;
+        font-size:3rem;
+        text-align:left;
+    }
+    .SymList{
+        text-align:left;
+        display:inline-block;
+        font-size:1.3rem;
+    }
+    .HospitalBlock{
+        padding-top:8%;
+        padding-bottom:7%;
+        margin-bottom:5%;
+    }
+    .HospitalBox{
+        margin-bottom:5%;
+        background-color:white;
+        box-shadow: 15px 20px rgba(96,96,96,0.05);
+    }
+    .cellText{
+        padding:0% 5%;
+        padding-bottom:5%;
+        font-size:1.5rem;
+    }
+    .HospitalCellLeft{
+        border-right: 2px solid #D84962;
+    }
+    .HospitalCellMid{
+        border-right: 2px solid #D84962;
+    }
+    .OldersBox{
+        background-color:#DCDCDC;
+        padding:4% 3%;
+        margin-bottom:10%;
+    }
+    .OldList{
+        list-style: "»";
+        margin-left: 1%;
+        font-size: 1.5rem;
+    }
+    .OldersPic{
+        position: absolute;
+        left: 60%;
+        top: 29%;
+    }
+
 }

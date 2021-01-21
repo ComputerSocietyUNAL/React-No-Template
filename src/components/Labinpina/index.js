@@ -4,6 +4,9 @@ import { data } from '../../data/labinpina';
 import Products from './Products';
 import ListTips from './ListTips';
 import Spasms from './Spasms';
+import Causes from './Causes';
+import Medic from './Medic';
+import Tips from './Tips';
 
 
 export default class Labinpina extends Component {
@@ -58,7 +61,7 @@ export default class Labinpina extends Component {
                         </div>
                         <div className="col-md-6">
                             <Carousel 
-                                autoPlay={true}
+                                autoPlay={false}
                                 autoPlaySpeed={4000}
                                 arrows={true}
                                 showDots={true}
@@ -88,13 +91,14 @@ export default class Labinpina extends Component {
                     backgroundSize:"cover",
                     height:"50vh",
                     width:"100%",
-                    color:"white"
-                    
+                    color:"white",
+                    marginBottom:"5%"
                     }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6" style={{marginLeft:"0%",marginTop:"-10%",marginRight:"10%"}}>
-                                <img src="/assets/img/Labinpina.png" alt="Labinpina" height="60%" />
+                                <img src="/assets/img/Labinpina.png" alt="Labinpina" height="60%" 
+                                    />
                                 <p style={{
                                     paddingRight:"25%",
                                     fontSize:data[0].RegConfig[1]
@@ -115,6 +119,9 @@ export default class Labinpina extends Component {
                     </div>                    
                 </div>
                 <Spasms/>
+                <Causes/>
+                <Medic/>
+                <Tips/>
             </div>
         );
     }

@@ -8,18 +8,18 @@ export default class ListTips extends Component{
         let idx=-1;
         return(
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-12">
                     <div className="row">
                         {
                             data[0].Col1.map(() => {
                                 idx=idx+1
                                 return (
-                                    <div className="row" style={{marginBottom:"7%"}}>
-                                        <div className="col-md-3">
-                                            <img src={data[0].Col1[idx].Image} alt={data[0].Col1[idx].id} width="100%" />
+                                    <div className="row" style={{marginBottom:"1%"}}>
+                                        <div className="col-md-2">
+                                            <img src={data[0].Col1[idx].Image} alt={data[0].Col1[idx].id} height="65%" />
                                         </div>
                                         <div className="col-md-9">
-                                            <p> { data[0].Col1[idx].Tip } </p>
+                                            <p style={{fontSize:"1.3rem"}}> { data[0].Col1[idx].Tip } </p>
                                         </div>
                                     </div>
                                 );

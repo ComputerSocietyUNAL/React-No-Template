@@ -3,8 +3,15 @@
     font-family: Nexa-Bold;
     src: url("../fonts/Nexa\ Bold.otf");
   }
+@font-face {
+    font-family: Nexa-Light;
+    src: url("../fonts//Nexa\ Light.otf");
+}
 .Tfont{
     font-family: Nexa-Bold;
+}
+.Lfont{
+    font-family: Nexa-Light;
 }
 .link-text{
     color: #01B6B8;
@@ -20,4 +27,22 @@
 .LowerText{
     color: #D84962;
     font-size: 100px;
+}
+@media (max-width: 768px) {
+
+}
+@media (min-width: 769px){
+    .headerTop{
+        position: absolute;
+        top:10%;
+        left:0%;
+    }
+    .headerMid{
+        margin-bottom: 5%;
+    }
+    .headerBot{
+        position: absolute;
+        top:40%;
+        left:-10%;
+    }
 }

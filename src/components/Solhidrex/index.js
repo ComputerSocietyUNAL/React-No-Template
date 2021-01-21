@@ -90,18 +90,12 @@ export default class Solhidrex extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{
-                    background:"url(/assets/img/ProductBack_01.png)",
-                    backgroundSize:"cover",
-                    height:"60vh",
-                    width:"100%",
-                    color:"white",
-                    marginBottom:"8%"
-                    
+                <div className="ListTipsBlock" style={{
+                    background:"url(/assets/img/ProductBack_01.png)",              
                 }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6" style={{marginLeft:"10%",marginTop:"-10%",}}>
+                            <div className="col-md-6 MainProduct">
                                 <img src="/assets/img/Solhidrex.png" alt="Solhidrex" height="80%" style={{marginBottom:"-10%"}}/>
                                 <p style={{
                                     paddingRight:"25%",
@@ -116,13 +110,12 @@ export default class Solhidrex extends Component {
                                     </p>
                                 </p>
                             </div>
-                            <div className="col-md-6" style={{marginTop:"-5%", marginLeft:"-10%",paddingRight:"0%"}}>
+                            <div className="col-md-6 ListTips">
                                 <img src="/assets/img/Solhidrex_spec.png" alt="Solhidrex" width="100%" />
                                 <ListTips/>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <MainTips/>
                 <Symptoms/>

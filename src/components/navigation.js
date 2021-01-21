@@ -10,15 +10,12 @@ class Header extends Component {
             isNavOpen: false
         };
         this.toggleNav = this.toggleNav.bind(this);
-
     }
-
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
     }
-
     render() {
         return(
             <React.Fragment>
@@ -51,7 +48,7 @@ class Header extends Component {
                                 <NavLink className="nav-link nav-text" to="/diarrea">Diarrea</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/contacto">Contacto</NavLink>
+                                <NavLink className="nav-link nav-text" to="/contactUs">Contacto</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

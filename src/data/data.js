@@ -37,7 +37,7 @@ export const data = [
         LineHeight: "1.1",
     },
     {
-        Image:"/assets/img/Labinpina_01.png",
+        Image:"/assets/img/Labinpina.png",
         PrimaryColor: "#86BE3E",
         SecondaryColor: "#606060",
         Fsize: "4rem",

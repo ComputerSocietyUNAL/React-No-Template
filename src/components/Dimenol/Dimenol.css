@@ -1,4 +1,16 @@
 .Dimtitle{
    color: #0E4C99;
-   font-size: 1.3rem;
+   font-size: 2.6rem;
+}
+.MareoText{
+   font-size: 2rem;
+   padding-right: 5%;
+}
+.DimCards{
+   margin-top: 8%;
+   background-color: white;
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   box-shadow: 15px 20px 1px 1px rgba(96,96,96,0.1);
 }

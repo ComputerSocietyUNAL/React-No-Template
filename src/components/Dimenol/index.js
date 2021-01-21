@@ -30,7 +30,7 @@ export default class Dimenol extends Component{
               }
         };
         return(
-            <div style={{width:"100%"}}>
+            <div style={{width:"100%",lineHeight:"1.2"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
                         <div className="col-md-6">
@@ -91,10 +91,10 @@ export default class Dimenol extends Component{
                     backgroundSize:"cover",
                     height:"50vh",
                     width:"100%",
-                    color:"white"
-                    
+                    color:"white",
+                    marginBottom:"5%"
                     }}>
-                    <div className="container">
+                    <div className="container col-md-9">
                         <div className="row">
                             <div className="col-md-6" style={{marginLeft:"0%",marginTop:"-10%",marginRight:"10%"}}>
                                 <img src="/assets/img/Dimenol.png" alt="Dimenol" height="60%" />

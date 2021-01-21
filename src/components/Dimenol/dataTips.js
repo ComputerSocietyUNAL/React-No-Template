@@ -5,7 +5,7 @@ export const data = [
                 Image:"/assets/img/1.png",
                 Tip:"¿Qué es el mareo?",
                 Msg:[
-                    "Suele referirse a 2 síntomas diferentes: la sensación de estar prócimo a perder el conocimiento y la sensación de estar girando o moviéndose y se pierde el equilibrio; este segundo se denomina vértigo"],
+                    "Suele referirse a 2 síntomas diferentes: la sensación de estar próximo a perder el conocimiento y la sensación de estar girando o moviéndose y se pierde el equilibrio; este segundo se denomina vértigo"],
                 id:"1"
             },
             {

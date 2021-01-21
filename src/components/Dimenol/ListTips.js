@@ -7,16 +7,16 @@ export default class ListTips extends Component{
         /* const data= this.props.data; */
         let idx=-1;
         return(
-                <div className="col-md-7">
+                <div className="col-md-11">
                         {
                             data[0].Col1.map(() => {
                                 idx=idx+1
                                 return (
-                                    <div className="row" style={{marginBottom:"7%"}}>
-                                        <div className="col-md-3">
-                                            <img src={data[0].Col1[idx].Image} alt={data[0].Col1[idx].id} width="100%" />
+                                    <div className="row" style={{marginBottom:"3%",fontSize:"1.3rem"}}>
+                                        <div className="col-md-2">
+                                            <img src={data[0].Col1[idx].Image} alt={data[0].Col1[idx].id} height="90%" style={{marginTop:"-5%"}}/>
                                         </div>
-                                        <div className="col-md-9">
+                                        <div className="col-md-10">
                                             <p> { data[0].Col1[idx].Tip } </p>
                                         </div>
                                     </div>
