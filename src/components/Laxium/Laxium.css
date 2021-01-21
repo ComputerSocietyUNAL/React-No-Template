@@ -1,8 +1,9 @@
+@media (max-width: 768px) {
+
+}
 .LaxCards{
    margin-top: 5%;
    background-color: white;
-   /* border: solid;
-   border-color: grey; */
    height: 50vh /* 125% */;
    text-align: center;
    padding-top: 3%;
@@ -11,4 +12,70 @@
 .Laxtitle{
    color: #86BE3E;
    font-size: 1.7rem;
+}
+@media (min-width: 769px) {
+   .ListTipBlock{
+      height:60vh;
+      width:100%;
+      color:white;
+   }
+   .ListTipBox{
+      margin-top:-5%;
+      margin-left:-10%;
+      padding-right:0%;
+   }
+   .MainProductBox{
+      margin-left:0%;
+      margin-top:-10%;
+      margin-right:10%;
+   }
+   .MainTipBox{
+      height:45vh;
+      width:100%;
+      margin-bottom:18%;
+   }
+   .CareBlock{
+      background-size:cover;
+      height:auto;
+      margin-bottom:5%;
+      padding-top: 9% ;
+      padding-bottom: 1%;
+   }
+   .CareHeaderBox{
+      margin-bottom:5%;
+      background-color:white;
+      border:2px solid white;
+      padding:0% 5% !important;
+   }
+   .CareTitle{
+      padding-right:20%;
+      font-size:2.6rem;
+   }
+   .CareTextBox{
+      margin-bottom:5%;
+      font-size:1.5rem;
+   }
+   .CareTipLeft{
+      border-right: 2px solid #86BE3E;
+   }
+   .CareTipMid{
+      border-right: 2px solid #86BE3E;
+   }
+   .DietTitle{
+      padding-left: 0%;
+      font-size:3.0rem;
+   }
+   .CareIconsBox{
+      margin-bottom:-5%;
+      margin-top: 5%;
+   }
+   .CareTextBox{
+      text-align: center;
+      margin-top:3%;
+      padding:0% 0%;
+      font-size:1.5rem;
+   }
+   .CareText{
+      padding: 1%;
+   }
 }

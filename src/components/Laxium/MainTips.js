@@ -10,12 +10,9 @@ export default class MainTips extends Component{
         let idx=-1;
         return(
             <div className="container col-md-11" style={{marginBottom:"0%",marginTop:"5%"}}>
-                <div className="row justify-content-center" style={{
+                <div className="row justify-content-center MainTipBox" style={{
                     background:"url(/assets/img/Laxium_MainTip.png)",
                     backgroundSize:"cover",
-                    height:"45vh",
-                    width:"100%",
-                    marginBottom:"18%",
                 }}>
                     <div className="col-md-3 LaxCards">
                         <p className="Laxtitle" style={{padding:"0% 8%",fontSize:"2.0rem",marginBottom:"10%"}}>{data[0].Col1[0].Tip}</p>
