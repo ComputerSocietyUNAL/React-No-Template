@@ -1,0 +1,30 @@
+@media (max-width:768px){
+   .SliderBlock{
+      padding:10%;    
+   }
+   .Slider-p{
+      font-size: 2rem;
+   }
+   .Reg{
+      display: none
+   }
+   .RegMovil{
+      display: block;
+   }
+   .imgSlider{
+      margin-top: 0%;
+      text-align: center;
+   }
+
+}
+@media (min-width:769px){
+   .SliderBlock{
+      padding:10%;
+   }
+   .Slider-p{
+      font-size: 3.5rem;
+   }
+   .RegMovil{
+      display: none;
+   }
+}

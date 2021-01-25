@@ -37,7 +37,7 @@ export default class Solhidrex extends Component {
             <div style={{width:"100%"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
-                        <div className="col-md-6">
+                        <div className="col-6 col-md-6">
                             <p className="Tfont" style={{
                                 color:data[id].PrimaryColor,
                                 fontSize:data[id].Fsize,
@@ -49,7 +49,7 @@ export default class Solhidrex extends Component {
                                     {data[id].SecondaryText}
                                 </p>
                             </p>
-                            <p style={{
+                            <p className="Reg" style={{
                                 color:data[id].RegConfig[0],
                                 fontSize:data[id].RegConfig[1],
                                 lineHeight:data[id].LineHeight
@@ -87,6 +87,19 @@ export default class Solhidrex extends Component {
                                 <div>2</div>
                                 <div>3</div>
                             </Carousel>
+                            <p className="RegMovil" style={{
+                            color:data[id].RegConfig[0],
+                            fontSize:data[id].RegConfig[1],
+                            lineHeight:data[id].LineHeight,
+                            }}>
+                            {data[id].PrimaryReg}
+                            <p style={{
+                                color:data[id].RegConfig[0],
+                                fontSize:data[id].RegConfig[2]
+                            }}>
+                                {data[id].SecondaryReg}
+                            </p>
+                        </p>
                         </div>
                     </div>
                 </div>
@@ -95,9 +108,9 @@ export default class Solhidrex extends Component {
                 }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 MainProduct">
-                                <img src="/assets/img/Solhidrex.png" alt="Solhidrex" height="80%" style={{marginBottom:"-10%"}}/>
-                                <p style={{
+                            <div className="col-6 col-md-6 MainProduct">
+                                <img className="SolPic" src="/assets/img/Solhidrex.png" alt="Solhidrex" style={{marginBottom:"-10%"}}/>
+                                <p className="RegListWeb" style={{
                                     paddingRight:"25%",
                                     fontSize:data[0].RegConfig[1],
                                     marginTop:"-0%"
@@ -110,10 +123,22 @@ export default class Solhidrex extends Component {
                                     </p>
                                 </p>
                             </div>
-                            <div className="col-md-6 ListTips">
-                                <img src="/assets/img/Solhidrex_spec.png" alt="Solhidrex" width="100%" />
+                            <div className="col-6 col-md-6 ListTips">
+                                <img className="SolSpecPic" src="/assets/img/Solhidrex_spec.png" alt="Solhidrex" width="100%" />
                                 <ListTips/>
                             </div>
+                            <p className="RegListMovil" style={{
+                                    paddingRight:"5%",
+                                    fontSize:data[0].RegConfig[1],
+                                    marginTop:"-0%"
+                                }}>
+                                    {data[0].PrimaryReg}
+                                    <p style={{
+                                        fontSize:data[0].RegConfig[2]
+                                    }}>
+                                        {data[0].SecondaryReg}
+                                    </p>
+                                </p>
                         </div>
                     </div>                    
                 </div>

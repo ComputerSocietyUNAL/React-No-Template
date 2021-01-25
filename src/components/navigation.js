@@ -10,22 +10,28 @@ class Header extends Component {
             isNavOpen: false
         };
         this.toggleNav = this.toggleNav.bind(this);
+        this.closeNavbar= this.closeNavbar.bind(this);
     }
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
     }
+    closeNavbar(){
+        if(this.state.collapsed !== true){
+            this.toggleNav();
+        }
+    }
     render() {
         return(
             <React.Fragment>
                 <Navbar dark expand="md" right>
                 <div className="container" style={{height:'6vh'}}>
-                    <NavbarToggler right onClick={this.toggleNav} />
+                    <NavbarToggler right onClick={this.toggleNav} className="NavBtn"/>
                     <NavbarBrand className="mr-auto" href="/">
-                        {/* <img src="assets/images/logo.png" alt="logo" height="30" width="41" /> */}
+                        {/* <img src="/assets/logo/logo.png" alt="logo" height="30" width="auto" /> */}
                     </NavbarBrand>
-                    <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <Collapse isOpen={this.state.isNavOpen} navbar className="NavMenu">
                         <Nav navbar className="ml-auto">
                             <NavItem>
                                 <NavLink className="nav-link nav-title" to="/home">                               
@@ -33,22 +39,40 @@ class Header extends Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/solhidrex">Solhidrex</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/solhidrex"
+                                onClick={this.closeNavbar}>Solhidrex</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/labinpina">Labinpina</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/labinpina"
+                                onClick={this.closeNavbar}>Labinpina</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/laxium">Laxium</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/laxium"
+                                onClick={this.closeNavbar}>Laxium</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/dimenol">Dimenol</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/dimenol"
+                                onClick={this.closeNavbar}>Dimenol</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/diarrea">Diarrea</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/diarrea"
+                                onClick={this.closeNavbar}>Diarrea</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-text" to="/contactUs">Contacto</NavLink>
+                                <NavLink 
+                                className="nav-link nav-text" 
+                                to="/contactUs"
+                                onClick={this.closeNavbar}>Contacto</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

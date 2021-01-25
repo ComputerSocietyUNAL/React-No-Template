@@ -33,7 +33,7 @@ export default class Labinpina extends Component {
             <div style={{width:"100%"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
-                        <div className="col-md-6">
+                        <div className="col-6 col-md-6">
                             <p className="Tfont" style={{
                                 color:data[id].PrimaryColor,
                                 fontSize:data[id].Fsize,
@@ -45,7 +45,7 @@ export default class Labinpina extends Component {
                                     {data[id].SecondaryText}
                                 </p>
                             </p>
-                            <p style={{
+                            <p className="Reg" style={{
                                 color:data[id].RegConfig[0],
                                 fontSize:data[id].RegConfig[1],
                                 lineHeight:data[id].LineHeight
@@ -59,7 +59,7 @@ export default class Labinpina extends Component {
                                 </p>
                             </p>        
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-12 col-md-6">
                             <Carousel 
                                 autoPlay={false}
                                 autoPlaySpeed={4000}
@@ -83,22 +83,30 @@ export default class Labinpina extends Component {
                                 <div>2</div>
                                 <div>3</div>
                             </Carousel>
+                            <p className="LabRegMovil" style={{
+                            color:data[id].RegConfig[0],
+                            fontSize:data[id].RegConfig[1],
+                            lineHeight:data[id].LineHeight,
+                            }}>
+                            {data[id].PrimaryReg}
+                            <p style={{
+                                color:data[id].RegConfig[0],
+                                fontSize:data[id].RegConfig[2]
+                            }}>
+                                {data[id].SecondaryReg}
+                            </p>
+                        </p>
                         </div>
                     </div>
                 </div>
-                <div style={{
+                <div className="ListTipsBlock" style={{
                     background:"url(/assets/img/ProductBack_04.png)",
                     backgroundSize:"cover",
-                    height:"50vh",
-                    width:"100%",
-                    color:"white",
-                    marginBottom:"5%"
                     }}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6" style={{marginLeft:"0%",marginTop:"-10%",marginRight:"10%"}}>
-                                <img src="/assets/img/Labinpina.png" alt="Labinpina" height="60%" 
-                                    />
+                            <div className="col-6 col-md-6 MainLabiBox">
+                                <img className="LabPic" src="/assets/img/Labinpina.png" alt="Labinpina"/>
                                 <p style={{
                                     paddingRight:"25%",
                                     fontSize:data[0].RegConfig[1]
@@ -111,9 +119,31 @@ export default class Labinpina extends Component {
                                     </p>
                                 </p>
                             </div>
-                            <div className="col-md-6" style={{marginTop:"-5%", marginLeft:"-10%",paddingRight:"0%"}}>
+                            <div className="col-md-6 LabListBox" style={{}}>
                                 <img src="/assets/img/Labinpina_spec.png" alt="Dimenol" width="100%" />
                                 <ListTips/>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div className="ListMovTipsBlock col-12" style={{
+                    background:"url(/assets/img/ProductBack_04.png)",
+                    backgroundSize:"cover",
+                    }}>
+                        <img className="LabSpec" src="/assets/img/Labinpina_spec.png" alt="Dimenol" width="100%" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 col-md-6 MainLabiBox">
+                                <img className="LabPic" src="/assets/img/Labinpina.png" alt="Labinpina"/>
+                                <ListTips/>
+                                <p className="MovReg" style={{
+                                }}>
+                                    {data[0].PrimaryReg}
+                                    <p style={{
+                                    }}>
+                                        {data[0].SecondaryReg}
+                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>                    

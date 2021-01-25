@@ -1,7 +1,179 @@
 @media (max-width: 768px) {
-
+    .Reg{
+        display: none
+     }
+     .RegMovil{
+        display: block;
+     }
+     .ListTipsBlock{
+        background-size:cover;
+        height:80vh;
+        width:100%;
+        color:white;
+        margin-bottom:-20%;
+    }
+    .MainProduct{
+        margin-left:0%;
+        margin-top:-0%;
+    }
+     .SolPic{
+         margin-top: 50%;
+         width: 100%;
+     }
+     .SolSpecPic{
+         margin-left: -100%;
+         margin-top: -25%;
+         width: 200%;
+     }
+     .RightList{
+        display: none;
+    }
+    .LeftFullList{
+        display: none;
+    }
+    .MovilTipList{
+        color:white;
+        font-size: 0.8rem;
+    }
+    .RegListWeb{
+        display: none;
+    }
+    .RegListMovil{
+        color: white;
+        display: block;
+    }
+    .MainTipBlock{
+        margin-bottom:0%;
+    }
+    .MainTip{
+        height:auto;
+        background: none !important;
+        padding-top:1%;
+        width:100%;
+        margin-bottom:18%;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        align-items:center;
+    }
+    .SolCards{
+        margin-top: 4.8%;
+        margin-bottom: 5%;
+        background-color: white;
+        height: 150%;
+        text-align: center;
+        padding-top: 5%;
+        box-shadow: 15px 20px 1px 1px rgba(96,96,96,0.1);
+    }
+    .SolTipText{
+        padding: 0% 0%;
+        font-size: 1.8rem;
+    }
+    .SolTiptext{
+        padding: 0% 8%;
+        font-size: 1.3rem;
+    }
+    .SympBlock{
+        margin-bottom:5%
+    }
+    .SymMovilTitle{
+        color: #D84962;
+        font-size: 1.6rem;
+    }
+    .DoctoraPic{
+        margin-left: -40%;
+        width: 250%;
+    }
+    .SympTextBlock{
+        text-align:center;
+        padding:0% 0%;
+        margin-left: -10%;
+    }
+    .SymTitle{
+        display: none;
+        font-size:1rem;
+        text-align:left;
+    }
+    .SymList{
+        color: #606060;
+        margin: 5% -5% 0% 7%;
+        text-align:left;
+        display:inline-block;
+        font-size: 0.7rem;
+        line-height: 1.1;
+    }
+    .HospitalBlock{
+        display: none;
+    }
+    .HospitalMovilBlock{
+        background-repeat: no-repeat;
+        background-position-x: -20% !important;
+    }
+    .HospitalPicBack{
+        margin-left: -10%;
+        width: 160%;
+        margin-bottom: -40%;
+    }
+    .cellText{
+        padding:0% 5%;
+        padding-bottom:5%;
+        font-size:1.1rem;
+    }
+    .HospitalCellLeft{
+        padding-left: 5%;
+    }
+    .HospitalCellLeft:before{
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #D84962;
+        position: absolute;
+        bottom: 4px;
+    }
+    .HospitalCellMid{
+        padding-left: 5%;
+    }
+    .HospitalCellMid::before{
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #D84962;
+        position: absolute;
+        bottom: 4px;
+    }
+    .WebOlders{
+        display: none;
+    }
+    .OldersBox{
+        background-color:#DCDCDC;
+        padding:4% 3%;
+        margin-bottom:10%;
+    }
+    .OldList{
+        list-style: "»";
+        margin-left: -15%;
+        font-size: 0.8rem;
+    }
+    .OldersPic{
+        margin-top: 20%;
+        margin-left: -15%;
+    }
+    .WebTip{
+        display: none;
+    }
+}
+.title{
+    color: #D84962;
 }
 @media (min-width: 769px) {
+    .MovilTipList{
+        display: none;
+    }
+    .RegMovil{
+        display: none;
+     }
+    .RegListMovil{
+        display: none;
+    }
     .ListTipsBlock{
         background-size:cover;
         height:55vh;
@@ -12,6 +184,9 @@
     .MainProduct{
         margin-left:10%;
         margin-top:-10%;
+    }
+    .SolPic{
+        height: 80%;
     }
     .ListTips{
         margin-top:-5%;
@@ -46,8 +221,19 @@
         color: #D84962;
         font-size: 1.3rem;
     }
+    .SolTipText{
+        padding: 0% 20%;
+        font-size: 2rem;
+    }
+    .SolTiptext{
+        padding: 0% 8%;
+        font-size: 1.5rem;
+    }
     .SympBlock{
         margin-bottom:5%
+    }
+    .SymMovilTitle{
+        display: none;
     }
     .SympTextBlock{
         text-align:center;
@@ -63,6 +249,9 @@
         text-align:left;
         display:inline-block;
         font-size:1.3rem;
+    }
+    .HospitalMovilBlock{
+        display: none;
     }
     .HospitalBlock{
         padding-top:8%;
@@ -85,6 +274,9 @@
     .HospitalCellMid{
         border-right: 2px solid #D84962;
     }
+    .MovilOlders{
+        display: none;
+    }
     .OldersBox{
         background-color:#DCDCDC;
         padding:4% 3%;
@@ -100,5 +292,7 @@
         left: 60%;
         top: 29%;
     }
-
+    .MovilTip{
+        display: none;
+    }
 }

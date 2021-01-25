@@ -44,7 +44,7 @@ export default class Laxium extends Component{
                                     {data[id].SecondaryText}
                                 </p>
                             </p>
-                            <p style={{
+                            <p className="LaxReg" style={{
                                 color:data[id].RegConfig[0],
                                 fontSize:data[id].RegConfig[1],
                                 lineHeight:data[id].LineHeight
@@ -82,6 +82,19 @@ export default class Laxium extends Component{
                                 <div>2</div>
                                 <div>3</div>
                             </Carousel>
+                            <p className="LaxMovReg" style={{
+                                color:data[id].RegConfig[0],
+                                fontSize:data[id].RegConfig[1],
+                                lineHeight:data[id].LineHeight
+                                }}>
+                                {data[id].PrimaryReg}
+                                <p style={{
+                                    color:data[id].RegConfig[0],
+                                    fontSize:data[id].RegConfig[2]
+                                }}>
+                                    {data[id].SecondaryReg}
+                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -108,6 +121,36 @@ export default class Laxium extends Component{
                             <div className="col-md-7 ListTipBox" style={{}}>
                                 <img src="/assets/img/Laxium_spec.png" alt="Laxium" width="100%" style={{marginTop:"-8%"}}/>
                                 <ListTips/>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div className="ListMovTipBlock" style={{
+                    background:"url(/assets/img/ProductBack_02.png)",
+                    backgroundSize:"cover",
+                    }}>
+                    <img 
+                        src="/assets/img/Laxium_spec.png" 
+                        alt="Laxium" 
+                        width="100%" style={{marginTop:"-10%"}}/>
+                    <div className="container col-10">
+                        <div className="row justify-content-center">
+                            <div className="col-10 MainProductBox">
+                                <img src="/assets/img/Laxium.png" alt="Laxium" width="95%" style={{marginBottom:"-10%",}}/>
+                            </div>
+                            <div className="col-10 ListTipBox" style={{}}>
+                                <ListTips/>
+                                <p style={{
+                                    paddingRight:"5%",
+                                    fontSize:"0.8rem"
+                                }}>
+                                    {data[0].PrimaryReg}
+                                    <p style={{
+                                        fontSize:"0.7rem"
+                                    }}>
+                                        {data[0].SecondaryReg}
+                                    </p>
+                                </p>
                             </div>
                         </div>
                     </div>                    

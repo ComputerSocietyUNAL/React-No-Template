@@ -8,65 +8,96 @@ export default class Tips extends Component{
    render(){
       let idx=-1;
       let idy=-1;
+      let idxx=-1;
+      let idyy=-1;
       return(
-         <div
-            style={{
-               background:"url(/assets/img/LabTipsBck.png)",
-               backgroundSize:"cover",
-               height:"auto",
-               paddingTop:"9%",
-               paddingBottom:"8%",
-               paddingLeft:"0%"
-            }}>
-            <div className="container col-md-7" 
+         <React.Fragment>
+            <div className="LabTipsBlock"
                style={{
-                  boxShadow: "15px 20px 1px 1px rgba(96,96,96,0.1)",
-                  backgroundColor:"white",
-                  padding:"2% 2%",
+                  background:"url(/assets/img/LabTipsBck.png)",
+                  backgroundSize:"cover",
                }}>
-               <div className="row">
-                  <div className="col-md-6">
-                     <p className="Labtitle" style={{fontSize:"2.6rem",textAlign:"left",paddingLeft:"7%"}}>
-                        {data[0].Col1[3].Tip}
-                     </p>
+               <div className="container col-md-7 LabTipsBox">
+                  <div className="row">
+                     <div className="col-md-6">
+                        <p className="Labtitle LabTiptitle">
+                           {data[0].Col1[3].Tip}
+                        </p>
+                     </div>
+                     <div className="col-md-6">
+                        <img className="LabTipImg" src="/assets/img/GreyColon.png" alt="greycolon" width="70%"/>
+                     </div>
                   </div>
-                  <div className="col-md-6">
-                     <img src="/assets/img/GreyColon.png" alt="greycolon" width="70%"
-                        style={{
-                           marginTop:"-25%",
-                           marginLeft:"30%"
-                        }} 
-                     />
-                  </div>
-               </div>
-               <div className="row" style={{padding:"0% 2% 2% 2%",fontSize:"1.5rem"}}>
-                  <div className="col-md-6" style={{borderRight:"2px solid #0E4C99",}}>
+                  <div className="row LabTipsTextBox">
+                     <div className="col-md-6 LabTipLeft" >
+                        <ul>
+                           {data[0].Col1[3].MsgL.map(()=>{
+                              idx=idx+1
+                              return(
+                                 <li>
+                                    {data[0].Col1[3].MsgL[idx]}
+                                 </li>
+                              );
+                           })}
+                        </ul>
+                     </div>
+                     <div className="col-md-6 LabTipRight" style={{}}>
                      <ul>
-                        {data[0].Col1[3].MsgL.map(()=>{
-                           idx=idx+1
-                           return(
-                              <li>
-                                 {data[0].Col1[3].MsgL[idx]}
-                              </li>
-                           );
-                        })}
-                     </ul>
-                  </div>
-                  <div className="col-md-6" style={{paddingRight:"10%"}}>
-                  <ul>
-                        {data[0].Col1[3].MsgR.map(()=>{
-                           idy=idy+1
-                           return(
-                              <li>
-                                 {data[0].Col1[3].MsgR[idy]}
-                              </li>
-                           );
-                        })}
-                     </ul>
+                           {data[0].Col1[3].MsgR.map(()=>{
+                              idy=idy+1
+                              return(
+                                 <li>
+                                    {data[0].Col1[3].MsgR[idy]}
+                                 </li>
+                              );
+                           })}
+                        </ul>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
+            <div className="LabMovTipsBlock">
+               <img className="LabTipsPic" src="/assets/img/LabMovTipsBck.png" alt="" />
+               <div className="container col-12 LabTipsBox">
+                  <div className="row LabTitleBox">
+                     <div className="col-7">
+                        <p className="Labtitle LabTiptitle">
+                           {data[0].Col1[3].Tip}
+                        </p>
+                     </div>
+                     <div className="col-5">
+                        <img className="LabTipImg" src="/assets/img/GreyColon.png" alt="greycolon" width="70%"/>
+                     </div>
+                  </div>
+                  <div className="row LabTipsTextBox">
+                     <div className="col-md-6 LabTipLeft" >
+                        <ul>
+                           {data[0].Col1[3].MsgL.map(()=>{
+                              idxx=idxx+1
+                              return(
+                                 <li>
+                                    {data[0].Col1[3].MsgL[idxx]}
+                                 </li>
+                              );
+                           })}
+                        </ul>
+                     </div>
+                     <div className="col-md-6 LabTipRight" style={{}}>
+                     <ul>
+                           {data[0].Col1[3].MsgR.map(()=>{
+                              idyy=idyy+1
+                              return(
+                                 <li>
+                                    {data[0].Col1[3].MsgR[idyy]}
+                                 </li>
+                              );
+                           })}
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </React.Fragment>
       );
    }
 }

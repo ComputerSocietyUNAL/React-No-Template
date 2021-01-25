@@ -4,12 +4,15 @@ export default class Symptoms extends Component{
 
    render(){
       return(
-         <div className="container col-md-11 SympBlock" style={{}}>
+         <div className="container col-11 col-md-11 SympBlock" style={{}}>
             <div className="row">
-               <div className="col-md-6">
-                  <img src="/assets/img/Doctora.png" alt="Doctora" width="90%"/>
+                  <p className="SymMovilTitle">
+                     ¿Cuales son los sintomas de la deshidratación?
+                  </p>
+               <div className="col-6 col-md-6 ">
+                  <img className="DoctoraPic" src="/assets/img/SolDoctora.png" alt="Doctora" width="90%"/>
                </div>
-               <div className="col-md-6 SympTextBlock" style={{}}>
+               <div className="col-6 col-md-6 SympTextBlock" style={{}}>
                   <p className="SymTitle" style={{}}>
                      ¿Cuales son los sintomas de la deshidratación?
                   </p>

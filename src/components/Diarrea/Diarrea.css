@@ -1,0 +1,46 @@
+@media (max-width: 768px){
+   .DiarreaWeb{
+      display: none;
+   }
+   .DiaHomeBlock{
+      text-align: left;
+      height: auto;
+  }
+   .DiaheaderTop{
+      position: relative;
+      top:0%;
+      left: 5%;
+      height: 25%;
+   }
+   .DiaheaderMid{
+      position: relative;
+      left: -28%;
+      margin-bottom: 0%;
+      width: 180%;
+   }
+   .DiaheaderBot{
+      position: absolute;
+      top:55%;
+      left: -3%;
+      width: 90%;
+      margin-bottom: -10%;
+   }
+   .treatmentWeb{
+      display: none;
+   }
+   .treatmentMov{
+      width: 100%;
+   }
+   
+   .DiarreaMainPic{
+      width: 100%;
+   }
+}
+@media (min-width: 769px){
+   .DiarreaMov{
+      display: none;
+   }
+   .treatmentMov{
+      display: none;
+   }
+}

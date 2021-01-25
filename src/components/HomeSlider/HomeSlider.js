@@ -36,7 +36,7 @@ export default class HomeSlider extends Component{
         return(
             <div className="container" >
                 <Carousel 
-                    autoPlay={true}
+                    autoPlay={false}
                     autoPlaySpeed={4000}
                     arrows={true}
                     showDots={true}
@@ -59,7 +59,7 @@ export default class HomeSlider extends Component{
                             id=id+1
                             return(
                                 <div>
-                                    <Product id={id} /* data={this.state.data} */ />
+                                    <Product id={id}/>
                                 </div>
                             );
                         })

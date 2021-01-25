@@ -1,5 +1,65 @@
 @media (max-width: 768px) {
-
+   .LaxReg{
+      display: none;
+   }
+   .ListTipBlock{
+      display: none;
+   }
+   .ListTipBox{
+      width: 100%;
+      color: white;
+   }
+   .ListTipWeb{
+      display: none;
+   }
+   .MainTipWeb{
+      display: none;
+   }
+   .MainTipBox{
+      width:100%;
+      margin-bottom:18%;
+   }
+   .LaxCardsMov{
+      margin-bottom: 15%;
+      margin-top: 5%;
+      background-color: white;
+      height: auto /* 125% */;
+      text-align: center;
+      padding-top: 3%;
+      box-shadow: 15px 20px 1px 1px rgba(96,96,96,0.1);
+   }
+   .SymWeb{
+      display: none;
+   }
+   .CareWeb{
+      display: none;
+   }
+   .CareTipLeft{
+      border-right: 2px solid #86BE3E;
+   }
+   .CareTipLeft::before{
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: #86BE3E;
+      position: absolute;
+      bottom: 4px;
+   }
+   .CareTipMid{
+      border-right: 2px solid #86BE3E;
+   }
+   .CareTipMid::before{
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: #86BE3E;
+      position: absolute;
+      bottom: 4px;
+   }
+   .LaxDietWeb{
+      display: none;
+   }
+   
 }
 .LaxCards{
    margin-top: 5%;
@@ -14,15 +74,27 @@
    font-size: 1.7rem;
 }
 @media (min-width: 769px) {
+   .LaxMovReg{
+      display: none;
+   }
+   .ListMovTipBlock{
+      display: none;
+   }
    .ListTipBlock{
       height:60vh;
       width:100%;
       color:white;
    }
+   .ListTipMov{
+      display: none;   
+   }
    .ListTipBox{
       margin-top:-5%;
       margin-left:-10%;
       padding-right:0%;
+   }
+   .MainTipMov{
+      display: none;
    }
    .MainProductBox{
       margin-left:0%;
@@ -34,12 +106,18 @@
       width:100%;
       margin-bottom:18%;
    }
+   .SymMov{
+      display: none;
+   }
    .CareBlock{
       background-size:cover;
       height:auto;
       margin-bottom:5%;
       padding-top: 9% ;
       padding-bottom: 1%;
+   }
+   .CareMov{
+      display: none;
    }
    .CareHeaderBox{
       margin-bottom:5%;
@@ -77,5 +155,8 @@
    }
    .CareText{
       padding: 1%;
+   }
+   .LaxDietMov{
+      display: none;
    }
 }

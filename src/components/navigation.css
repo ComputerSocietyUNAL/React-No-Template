@@ -7,3 +7,10 @@
 .nav-text{
 	color:#606060 !important;
 }
+.NavBtn{
+	background-color: rgb(225,225,225) !important;
+}
+.NavMenu{
+	background-color:white;
+	z-index: 100;
+}

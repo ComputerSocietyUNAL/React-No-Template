@@ -8,11 +8,246 @@
 }
 .Labtitle{
    color: #86BE3E;
-   font-size: 1.3rem;
-   text-align: center;
+   /* font-size: 1.3rem; */
+   /* text-align: center; */
    line-height: 1.1;
 }
 .Labtext{
    color: #606060;
    font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+   .MainLabBox{
+      margin: 0% 0% 0% 0%;
+   }
+   .LabPic{
+      height: 30%;
+   }
+   .ListTipsBlock{
+      display: none;
+   }
+   .ListMovTipsBlock{
+      color: white;
+      margin-bottom: 10%;
+   }
+   .MainLabiBox{
+      align-items: center;
+   }
+   .LabPic{
+      width: 100%;
+      margin-left: 2%;
+   }
+   .LabSpec{
+      margin-top: -10%;
+   }
+   .WebListTip{
+      display: none;
+   }
+   .LabTipList{
+      margin-bottom: 5%;
+   }
+   .MovReg{
+      font-size: 0.7rem;
+   }
+   .SpasmsText{
+      text-align: left;
+   }
+   .SpasmsTitleText{
+      font-size: 1.6rem;
+   }
+   .SpasmssubText{
+      font-size: 1.0rem;
+   }
+   .MovilSpasmsWomanPic{
+      margin-left: 20%;
+      width: 80%;
+   }
+   .WebLabCauses{
+      display: none;
+   }
+   .LabCards{
+      color: #606060;
+   }
+   .Labtext{
+      color: #606060;
+      font-size: 1.0rem;
+   }
+   .CardTextTitle{
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0% 10%;
+   }
+   .CardTextLeft{
+      color: #606060 ;
+      text-align: left;
+      font-size: 1.2rem;
+   }
+   .WebLabMedic{
+      display: none;
+   }
+   .MovLabMedic{
+      display: block;
+      color: #606060;
+   }
+   .SymTitle{
+      color: #86BE3E;
+      font-size: 1.3rem;
+   }
+   .LabSymBlock{
+      color: #606060;
+      font-size: 0.8rem;
+   }
+   .LabMedic{
+      margin-left: -80%;
+      margin-top: -30%;
+      width: 200%;
+   }
+   .LabTipsBlock{
+      display: none;
+   }
+   .LabTipsPic{
+      margin-left: -25%;
+      width: 150%;
+   }
+   .LabTitleBox{
+      margin-top: -30%;
+   }
+   .LabTiptitle{
+      font-size: 1.1rem;
+   }
+   .LabTipImg{
+      margin: -35% 0 0 5%;
+      width: 120%;
+   }
+   .LabTipsBox{
+      background-color: white;
+   }
+   .LabTipsTextBox{
+      font-size: 0.8rem;
+      line-height: 1.1;
+   }
+   .LabTipLeft{
+      font-size: 0.9rem;
+      margin-bottom: 5%;
+   }
+   .LabTipLeft:before{
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: #86BE3E;
+      position: absolute;
+      bottom: -4px;
+  }
+}
+
+@media (min-width: 769px) {
+   .ListTipsBlock{
+      height:50vh;
+      width:100%;
+      color:white;
+      margin-bottom:5%;
+   }
+   .MainLabiBox{
+      margin-left: 0%;
+      margin-top: -10%;
+      margin-right: 10%
+   }
+   .LabPic{
+      height: 60%;
+   }
+   .LabRegMovil{
+      display: none;
+   }
+   .ListMovTipsBlock{
+      display: none;
+   }
+   .LabListBox{
+      margin-top: -5%;
+      margin-left: -10%;
+      padding-right: 0%;
+   }
+   .MovListTip{
+   display: none;
+   }
+   .LabTipList{
+      margin-bottom: 7%;
+   }
+   .SpasmsText{
+      padding: 0% 5% !important;
+   }
+   .SpasmsTitleText{
+      text-align: center;
+      font-size: 2.6rem;
+   }
+   .SpasmssubText{
+      font-size: 1.9rem;
+   }
+   .MovilSpasmsWomanPic{
+      width: 100%;
+   }
+   .MovLabCauses{
+      display: none;
+   }
+   .CausesBlock{
+      height: 50vh;
+      margin-bottom: 15%;
+   }
+   .CardTextTitle{
+      font-size: 2.0rem;
+      padding: 0% 8%;
+   }
+   .CardTextLeft{
+      text-align: left;
+      padding-right: 10%;
+      font-size: 1.6rem;
+   }
+   .MovLabMedic{
+      display: none;
+   }
+   .LabSymBlock{
+      padding-top: 10%;
+      text-align: center;
+   }
+   .SymTitle{
+      font-size: 3rem;
+   }
+   .LAbSymList{
+      text-align:left;
+      display:inline-block;
+      font-size: 1.3rem;
+      color:#606060;
+   }
+   .LabMovTipsBlock{
+      display: none;
+   }
+   .LabTipsBlock{
+      height:auto;
+      padding-top: 9%;
+      padding-bottom: 8%;
+      padding-left: 0%
+   }
+   .LabTipsBox{
+      box-shadow: 15px 20px 1px 1px rgba(96,96,96,0.1);
+      background-color: white;
+      padding: 2% 2%;
+   }
+   .LabTiptitle{
+      font-size: 2.6rem;
+      text-align: left;
+      padding-left: 7%;
+   }
+   .LabTipImg{
+      margin-top: -25%;
+      margin-left: 30%
+   }
+   .LabTipsTextBox{
+      padding: 0% 2% 2% 2%;
+      font-size:1.5rem;
+   }
+   .LabTipLeft{
+      border-right: 2px solid #0E4C99;
+   }
+   .LabTipRight{
+      padding-right: 10%;
+   }
 }

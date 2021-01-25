@@ -11,20 +11,18 @@ export default class Product extends Component{
         /* const data=this.state.data; */
         return(
             <div className="container">
-                <div className="row" style={{padding:"10%"}}>
+                <div className="row SliderBlock" >
                     <div className="col-md-6 ">
-                        <p className="Tfont" style={{
+                        <p className="Tfont Slider-p" style={{
                             color:data[id].PrimaryColor,
-                            fontSize:data[id].Fsize,
                             lineHeight:data[id].LineHeight}}>
                             {data[id].PrimaryText}
                             <p style={{
-                                color:data[id].SecondaryColor,
-                                fontSize:data[id].Fsize}}>
+                                color:data[id].SecondaryColor,}}>
                                 {data[id].SecondaryText}
                             </p>
                         </p>
-                        <p style={{
+                        <p className="Reg" style={{
                             color:data[id].RegConfig[0],
                             fontSize:data[id].RegConfig[1],
                             lineHeight:data[id].LineHeight,
@@ -38,8 +36,21 @@ export default class Product extends Component{
                             </p>
                         </p>        
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 imgSlider">
                         <img src={data[id].Image} alt="" width="85%"/>
+                        <p className="RegMovil" style={{
+                            color:data[id].RegConfig[0],
+                            fontSize:data[id].RegConfig[1],
+                            lineHeight:data[id].LineHeight,
+                            }}>
+                            {data[id].PrimaryReg}
+                            <p style={{
+                                color:data[id].RegConfig[0],
+                                fontSize:data[id].RegConfig[2]
+                            }}>
+                                {data[id].SecondaryReg}
+                            </p>
+                        </p>      
                     </div>
                 </div>
             </div>

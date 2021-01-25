@@ -45,7 +45,7 @@ export default class Dimenol extends Component{
                                     {data[id].SecondaryText}
                                 </p>
                             </p>
-                            <p style={{
+                            <p className="DimReg" style={{
                                 color:data[id].RegConfig[0],
                                 fontSize:data[id].RegConfig[1],
                                 lineHeight:data[id].LineHeight,
@@ -83,16 +83,25 @@ export default class Dimenol extends Component{
                                 <div>2</div>
                                 <div>3</div>
                             </Carousel>
+                            <p className="DimMovReg" style={{
+                                color:data[id].RegConfig[0],
+                                fontSize:data[id].RegConfig[1],
+                                lineHeight:data[id].LineHeight,
+                                }}>
+                                {data[id].PrimaryReg}
+                                <p style={{
+                                    color:data[id].RegConfig[0],
+                                    fontSize:data[id].RegConfig[2]
+                                }}>
+                                    {data[id].SecondaryReg}
+                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div style={{
+                <div className="DimMainProd" style={{
                     background:"url(/assets/img/ProductBack_03.png)",
                     backgroundSize:"cover",
-                    height:"50vh",
-                    width:"100%",
-                    color:"white",
-                    marginBottom:"5%"
                     }}>
                     <div className="container col-md-9">
                         <div className="row">
@@ -114,6 +123,34 @@ export default class Dimenol extends Component{
                                 <img src="/assets/img/Dimenol_spec.png" alt="Dimenol" width="100%" />
                                 <ListTips/>
                             </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div className="DimMainMovProd" style={{
+                    background:"url(/assets/img/ProductBack_03.png)",
+                    backgroundSize:"cover",
+                    }}>
+                        <img src="/assets/img/Dimenol_spec.png" alt="Dimenol" width="100%" style={{marginTop:"-10%"}}/>
+                    <div className="container col-12">
+                        <div className="row justify-content-center">
+                            <div className="col-10" style={{marginTop:"-0%"}}>
+                                <img src="/assets/img/Dimenol.png" alt="Dimenol" width="100%" />
+                            </div>
+                            <div className="col-8" style={{marginTop:"-10%", marginLeft:"-0%"}}>
+                                <ListTips/>
+                            </div>
+                            <p style={{
+                                marginLeft:"5%",
+                                paddingRight:"0%",
+                                fontSize:"0.8rem"
+                            }}>
+                                {data[0].PrimaryReg}
+                                <p style={{
+                                    fontSize:"0.7rem"
+                                }}>
+                                    {data[0].SecondaryReg}
+                                </p>
+                            </p>
                         </div>
                     </div>                    
                 </div>

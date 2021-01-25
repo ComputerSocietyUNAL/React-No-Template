@@ -13,7 +13,7 @@ export const data = [
         LineHeight: "1.1",
     },
     {
-        Image:"/assets/img/Laxium_01.png",
+        Image:"/assets/img/Laxium.png",
         PrimaryColor: "#606060",
         SecondaryColor: "#86BE3E",
         Fsize: "3rem",

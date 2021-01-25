@@ -29,13 +29,38 @@
     font-size: 100px;
 }
 @media (max-width: 768px) {
-
+    .HomeBlock{
+        text-align: left;
+        height: auto;
+    }
+    .headerTop{
+        position: relative;
+        top:0%;
+        left: 5%;
+        height: 25%;
+    }
+    .headerMid{
+        position: relative;
+        left: -28%;
+        margin-bottom: 0%;
+        width: 150%;
+    }
+    .headerBot{
+        position: absolute;
+        top:52%;
+        left: -2%;
+        width: 90%;
+        margin-bottom: -10%;
+    }
 }
 @media (min-width: 769px){
+    .HomeBlock{
+        text-align: center;
+    }
     .headerTop{
         position: absolute;
         top:10%;
-        left:0%;
+        left:10%;
     }
     .headerMid{
         margin-bottom: 5%;
@@ -43,6 +68,6 @@
     .headerBot{
         position: absolute;
         top:40%;
-        left:-10%;
+        left:0%;
     }
 }
