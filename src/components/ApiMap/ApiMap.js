@@ -17,7 +17,7 @@ export default class ApiMap extends Component{
                         <p className="SalesText">Puntos de venta</p>
                     </div>
                     <div className="col-md-6">
-                        <p>Loading ApiMap...</p>
+                            <img className="MapPic" src="/assets/img/CellPhone.png" alt="Map" />
                     </div>
                 </div>
                 <div className="space">

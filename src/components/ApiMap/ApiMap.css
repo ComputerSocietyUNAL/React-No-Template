@@ -1,8 +1,26 @@
-.SalesText{
-    font-size: 4.0rem;
-    margin: 10% 20%;
+@media (max-width:768px){
+    .SalesText{
+        font-size: 2.0rem;
+        margin: 10% 20%;
+    }
+    .space{
+        background-color: white;
+        height: 50vh;
+    }
+    .MapPic{
+        width: 50%;
+    }
 }
-.space{
-    background-color: white;
-    height: 50vh;
+@media (min-width: 769px){
+    .SalesText{
+        font-size: 4.0rem;
+        margin: 10% 20%;
+    }
+    .space{
+        background-color: white;
+        height: 50vh;
+    }
+    .MapPic{
+        width: 50%;
+    }
 }
