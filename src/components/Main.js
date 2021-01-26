@@ -10,9 +10,6 @@ import Dimenol from './Dimenol/index';
 import ContactUS from './ContactUs/index';
 import Home from './Home';
 import Footer from './Footer';
-import ApiMap from './ApiMap/ApiMap';
-
-
 
 export default class Main extends Component{
     render(){
@@ -29,7 +26,6 @@ export default class Main extends Component{
                         <Route path="/home" component={Home}></Route>
                         <Redirect to="/home" component={Home}></Redirect>
                     </Switch>
-                <ApiMap />
                 <Footer />
             </div>
         );

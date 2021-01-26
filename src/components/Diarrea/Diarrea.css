@@ -43,4 +43,32 @@
    .treatmentMov{
       display: none;
    }
+   .DiaHomeBlock{
+      text-align: left;
+      height: auto;
+  }
+   .DiaheaderTop{
+      position: relative;
+      top:0%;
+      left: 5%;
+   }
+   .DiaheaderMid{
+      position: relative;
+      left: 0%;
+      margin-top: -20%;
+      margin-bottom: 10%;
+      width: 100%;
+   }
+   .DiaheaderBot{
+      position: absolute;
+      top:42%;
+      left: -5%;
+      width: 45%;
+      margin-bottom: 0%;
+   }
+   .DiarreaMainPic{
+      width: 50%;
+      margin-bottom: -10%;
+      margin-left: 20%;
+   }
 }

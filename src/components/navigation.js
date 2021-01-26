@@ -25,7 +25,7 @@ class Header extends Component {
     render() {
         return(
             <React.Fragment>
-                <Navbar dark expand="md" right>
+                <Navbar light expand="md" right>
                 <div className="container" style={{height:'6vh'}}>
                     <NavbarToggler right onClick={this.toggleNav} className="NavBtn"/>
                     <NavbarBrand className="mr-auto" href="/">
@@ -34,45 +34,67 @@ class Header extends Component {
                     <Collapse isOpen={this.state.isNavOpen} navbar className="NavMenu">
                         <Nav navbar className="ml-auto">
                             <NavItem>
-                                <NavLink className="nav-link nav-title" to="/home">                               
-                                    {/* <span className="fa fa-home fa-lg" ></span> */} Home
+                                <NavLink 
+                                className="nav-link" 
+                                to="/home"
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Home
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/solhidrex"
-                                onClick={this.closeNavbar}>Solhidrex</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Solhidrex
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/labinpina"
-                                onClick={this.closeNavbar}>Labinpina</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Labinpina
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/laxium"
-                                onClick={this.closeNavbar}>Laxium</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Laxium
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/dimenol"
-                                onClick={this.closeNavbar}>Dimenol</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Dimenol
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/diarrea"
-                                onClick={this.closeNavbar}>Diarrea</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Diarrea
+                                </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink 
-                                className="nav-link nav-text" 
+                                className="nav-link" 
                                 to="/contactUs"
-                                onClick={this.closeNavbar}>Contacto</NavLink>
+                                onClick={this.closeNavbar}
+                                activeStyle={{color:"#01B6B8"}}>
+                                    Contacto
+                                </NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

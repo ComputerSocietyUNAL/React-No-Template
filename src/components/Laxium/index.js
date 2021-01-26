@@ -7,6 +7,7 @@ import MainTips from './MainTips';
 import Symptoms from './Symptoms';
 import Care from './Care';
 import Diet from './Diet';
+import ApiMap from '../ApiMap/ApiMap';
 
 export default class Laxium extends Component{
     render(){
@@ -159,7 +160,7 @@ export default class Laxium extends Component{
             <Symptoms/>
             <Care/>
             <Diet/>
-
+            <ApiMap/>
             </div>
         );
     }

@@ -11,11 +11,13 @@ import MainTips from './MainTips';
 import Symptoms from './Symptoms';
 import Hospital from './Hospital';
 import Olders from './Olders';
+import ApiMap from '../ApiMap/ApiMap';
 
 
 export default class Solhidrex extends Component {
     render(){
         let id =0;
+        let elink=1;
         const responsive = {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
@@ -147,6 +149,7 @@ export default class Solhidrex extends Component {
                 <Hospital/>
                 <Olders/>
                 <Tips/>
+                <ApiMap elink={elink}/>
             </div>
         );
     }

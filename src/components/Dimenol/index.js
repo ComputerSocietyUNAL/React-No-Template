@@ -7,6 +7,7 @@ import Mareo from './Mareo';
 import Causes from './Causes';
 import Medic from './Medic';
 import Tips from './Tips';
+import ApiMap from '../ApiMap/ApiMap';
 
 
 export default class Dimenol extends Component{
@@ -158,6 +159,7 @@ export default class Dimenol extends Component{
                 <Causes/>
                 <Medic/>
                 <Tips/>
+                <ApiMap/>
             </div>
         );
     }
