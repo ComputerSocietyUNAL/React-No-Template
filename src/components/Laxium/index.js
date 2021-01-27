@@ -12,6 +12,7 @@ import ApiMap from '../ApiMap/ApiMap';
 export default class Laxium extends Component{
     render(){
         let id =0;
+        let elink=3;
         const responsive = {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
@@ -33,17 +34,15 @@ export default class Laxium extends Component{
             <div style={{width:"100%"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
-                        <div className="col-md-6">
-                            <p className="Tfont" style={{
+                        <div className="col-10 col-md-6">
+                            <p className="Tfont Laxtitletext" style={{
                                 color:data[id].PrimaryColor,
-                                fontSize:data[id].Fsize,
                                 lineHeight:data[id].LineHeight}}>
                                 {data[id].PrimaryText}
-                                <p style={{
-                                    color:data[id].SecondaryColor,
-                                    fontSize:data[id].Fsize}}>
+                                <span style={{
+                                    color:data[id].SecondaryColor,}}>
                                     {data[id].SecondaryText}
-                                </p>
+                                </span>
                             </p>
                             <p className="LaxReg" style={{
                                 color:data[id].RegConfig[0],
@@ -160,7 +159,7 @@ export default class Laxium extends Component{
             <Symptoms/>
             <Care/>
             <Diet/>
-            <ApiMap/>
+            <ApiMap elink={elink}/>
             </div>
         );
     }

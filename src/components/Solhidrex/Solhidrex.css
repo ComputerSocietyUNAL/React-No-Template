@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    .soltitletext{
+        font-size: 2.0rem;
+    }
     .Reg{
         display: none
      }
@@ -165,6 +168,9 @@
     color: #D84962;
 }
 @media (min-width: 769px) {
+    .soltitletext{
+        font-size: 4.0rem;
+    }
     .MovilTipList{
         display: none;
     }

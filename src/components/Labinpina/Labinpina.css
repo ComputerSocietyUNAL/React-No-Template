@@ -17,6 +17,10 @@
    font-size: 1.6rem;
 }
 @media (max-width: 768px) {
+   .Labtitletext{
+      font-size: 2.0rem;
+      margin-bottom: 5%;
+   }
    .MainLabBox{
       margin: 0% 0% 0% 0%;
    }
@@ -141,6 +145,10 @@
 }
 
 @media (min-width: 769px) {
+   .Labtitletext{
+      font-size: 4.0rem;
+      margin-bottom: 5%;
+   }
    .ListTipsBlock{
       height:50vh;
       width:100%;

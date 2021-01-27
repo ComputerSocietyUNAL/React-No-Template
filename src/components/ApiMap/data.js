@@ -1,10 +1,10 @@
 /* LINKs
-Home
-Solhidrex
-Labinpina
-Laxium
-Dimenol
-Diarrea
+0-Home
+1-Solhidrex
+2-Labinpina
+3-Laxium
+4-Dimenol
+5-Diarrea
 */ 
 export const data = [
    {
@@ -80,28 +80,28 @@ export const data = [
       Phisic:[
          {
             id:"Locatel",
-            img:"/assets/img/.png",
-            link:""
+            img:"/assets/img/Locatel.png",
+            link:["","","","","","",]
          },
          {
             id:"LaEconomía",
-            img:"/assets/img/.png",
-            link:""
+            img:"/assets/img/LaEconomia.png",
+            link:["","","","","","",]
          },
          {
             id:"CruzVerde",
-            img:"/assets/img/.png",
-            link:""
+            img:"/assets/img/CruzVerde.png",
+            link:["","","","","","",]
          },
          {
             id:"Olimpica",
-            img:"/assets/img/.png",
-            link:""
+            img:"/assets/img/Olimpica.png",
+            link:["","","","","","",]
          },
          {
             id:"La14",
-            img:"/assets/img/.png",
-            link:""
+            img:"/assets/img/La14.png",
+            link:["","","","","","",]
          },
       ]
    },

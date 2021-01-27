@@ -13,6 +13,7 @@ import ApiMap from '../ApiMap/ApiMap';
 export default class Labinpina extends Component {
     render(){
         let id =0;
+        let elink=2;
         const responsive = {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
@@ -34,15 +35,13 @@ export default class Labinpina extends Component {
             <div style={{width:"100%"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
-                        <div className="col-6 col-md-6">
-                            <p className="Tfont" style={{
+                        <div className="col-10 col-md-6">
+                            <p className="Tfont Labtitletext" style={{
                                 color:data[id].PrimaryColor,
-                                fontSize:data[id].Fsize,
                                 lineHeight:data[id].LineHeight}}>
                                 {data[id].PrimaryText}
                                 <p style={{
-                                    color:data[id].SecondaryColor,
-                                    fontSize:data[id].Fsize}}>
+                                    color:data[id].SecondaryColor,}}>
                                     {data[id].SecondaryText}
                                 </p>
                             </p>
@@ -153,7 +152,7 @@ export default class Labinpina extends Component {
                 <Causes/>
                 <Medic/>
                 <Tips/>
-                <ApiMap/>
+                <ApiMap elink={elink}/>
             </div>
         );
     }

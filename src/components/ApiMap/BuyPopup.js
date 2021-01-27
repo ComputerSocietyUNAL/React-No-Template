@@ -35,8 +35,10 @@ export default class BuyPopup extends Component{
              className="Modal"
              overlayClassName="Overlay"
          >
-           <PuntosVenta/>
-           
+           <PuntosVenta elink={this.props.elink}/>
+           <div className="PopupFooterBox">
+                  <img className="PopupFooterPic" src="/assets/img/PopupFooter.png" alt="" />
+            </div>
           </Modal>
         </div>
       );

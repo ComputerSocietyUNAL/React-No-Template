@@ -7,6 +7,7 @@ import ApiMap from './ApiMap/ApiMap';
 export default class Home extends Component {
     
     render(){
+        let elink=0;
         return(
             <React.Fragment>
             <div className="row" style={{width:"100%"}}>
@@ -18,7 +19,7 @@ export default class Home extends Component {
                     <HomeSlider/>
             </div>
             <div className="" style={{width:"100%"}}>
-                <ApiMap/>
+                <ApiMap elink={elink}/>
             </div>
             </React.Fragment>
         );

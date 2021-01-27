@@ -39,15 +39,13 @@ export default class Solhidrex extends Component {
             <div style={{width:"100%"}}>
                 <div className="container" style={{marginBottom:"10%"}}>
                     <div className="row" >
-                        <div className="col-6 col-md-6">
-                            <p className="Tfont" style={{
+                        <div className="col-9 col-md-6">
+                            <p className="Tfont soltitletext" style={{
                                 color:data[id].PrimaryColor,
-                                fontSize:data[id].Fsize,
                                 lineHeight:data[id].LineHeight}}>
                                 {data[id].PrimaryText}
                                 <p style={{
-                                    color:data[id].SecondaryColor,
-                                    fontSize:data[id].Fsize}}>
+                                    color:data[id].SecondaryColor,}}>
                                     {data[id].SecondaryText}
                                 </p>
                             </p>

@@ -6,6 +6,7 @@ import Treatment from './treatment';
 
 export default class Diarrea extends Component {
     render(){
+        let elink=5;
         return(
             <React.Fragment>
                 <div className="DiarreaWeb" style={{width:"100%"}}>
@@ -28,7 +29,7 @@ export default class Diarrea extends Component {
                     </div>
                     <Treatment/>
                 </div>
-                <ApiMap/>
+                <ApiMap elink={elink}/>
             </React.Fragment>
         );
     }

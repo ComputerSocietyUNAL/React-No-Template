@@ -19,7 +19,7 @@ export default class ApiMap extends Component{
                         <p className="SalesText">Puntos de venta</p>
                     </div>
                     <div className="CellPhoneBox col-8 col-md-6" style={{textAlign:"center"}}>
-                        <BuyPopup />
+                        <BuyPopup elink={this.props.elink} />
                     </div>
                 </div>
                 <div className="space">
