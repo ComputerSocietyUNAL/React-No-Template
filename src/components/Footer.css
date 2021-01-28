@@ -1,18 +1,42 @@
-.submitbtn{
-    background-color: #D84962 ; 
-    border-radius: 50px;
-    width: 25%;
+@media (max-width: 768px){
+    .blackBoxWeb{
+        display: none;
+    }
+    .submitbtn{
+        background-color: #D84962 ; 
+        border-radius: 18px !important;
+        width: 40%;
+    }
+    
+    .blackBoxMov{
+        color:white;
+    }
+    
+    .Formulario{
+        background-color:"transparent";
+        border-top-color:"transparent";
+        border-left-color:"transparent";
+        border-right-color:"transparent";
+    }
 }
-
-.blackBox{
-    /* background-color: rgb(18,18,18,0.9); *//*0.9*/
-    /* background-image: url("../../public/assets/img/FooterBckImg.png"); */
-    color:white;
-}
-
-.Formulario{
-    background-color:"transparent";
-    border-top-color:"transparent";
-    border-left-color:"transparent";
-    border-right-color:"transparent";
+@media (min-width: 769px){
+    .blackBoxMov{
+        display: none;
+    }
+    .submitbtn{
+        background-color: #D84962 ; 
+        border-radius: 50px !important;
+        width: 25%;
+    }
+    
+    .blackBoxWeb{
+        color:white;
+    }
+    
+    .Formulario{
+        background-color:"transparent";
+        border-top-color:"transparent";
+        border-left-color:"transparent";
+        border-right-color:"transparent";
+    }
 }
